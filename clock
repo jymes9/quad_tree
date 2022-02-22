@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <time.h>
+#include <math.h>
+#define LARGE_NUMBER 500000
+int main(void)
+{
+/* place your code here to load data into A_unsorted[i],
+   with i=0,…,N-1 */
+        clock_t start = clock();
+        int i;
+        for (i=0; i<LARGE_NUMBER; i++)
+        {
+/* copy the contents of A_unsorted into A here */
+/* place your algorithm to sort A here! */
+        }
+        clock_t end = clock();
+        printf("Running-time (secs) for %d repeats: %f\n", LARGE_NUMBER, (double) (end-start) / (double) CLOCKS_PER_SEC);
+        return 0;
+}
